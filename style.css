@@ -1,0 +1,600 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+
+}
+
+header{
+  position: fixed; 
+  background: #636369;
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+
+
+.left_area h3{
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.left_area span{
+  color: #7a7b92 ;
+}
+
+.contact_btn{
+  padding: 5px;
+  background: #7a7b92;
+  text-decoration: none;
+  float: right;
+  margin-top: -30px;
+  margin-right: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.ss;
+  transition-property: background;
+}
+
+.contact_btn:hover{
+  background: #85a3ff;
+}
+
+.sidebar{
+  background:  #454555;
+  margin-top: 70px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: left;
+}
+
+.sidebar .profile_pic{
+  width: 130px;
+  height: 130px;
+  border-radius: 130px;
+  margin-bottom: 20px;
+}
+
+
+.sidebar h3{
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.sidebar a{
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 70px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+
+}
+
+.sidebar a:hover{
+  background: #a9aabc;
+}
+
+.sidebar i{
+  padding-right: 20px;
+}
+
+
+label #sidebar_btn{
+  z-index: 1;
+  color: #fff;
+  position: fixed;
+  cursor: pointer;
+  left: 250px;
+  font-size: 20px;
+  margin: 5px 0;
+  transition:  0.5s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover{
+  color: #a9aabc;
+}
+
+#check:checked ~ .sidebar {
+  left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+}
+
+
+/* .content{
+  margin-left: 250px;
+  background-color: #0e0e14;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.5s;
+} */
+
+
+.homeContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make each section take up the full viewport height */
+  transition: 0.5s;
+  background-color: #0e0e14;
+  background-position: center;
+  background-size: cover;
+  padding: 0 20px; /* Add some padding for spacing */
+  text-align: center;
+  /* position: relative; */
+  /* z-index: -1; */
+}
+
+
+h1{
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 20vh;
+}
+
+
+h1 span{
+  color: #564e5c;
+}
+
+h2{
+  margin: 0;
+  color: #fff;
+  font-size: 10vh;
+}
+
+h2 span{
+  color: #fff;
+}
+
+
+
+.start{
+  margin-top: 0;
+  color: #fff;
+  font-size: 5vh;
+}
+
+.start span{
+  color: #85a3ff;
+}
+
+
+.iconsHome i {
+  font-size: 30px; /* Increase this value to make the icons larger */
+  margin: 10px; /* Optional: add some space between the icons */
+  color: #ffffff; /* Set color to make sure it matches your design */
+}
+
+.youtubeIcon i{
+  color: #FF0000;
+}
+
+.iconsHome a i:hover {
+  color: #00FF00; /* Example: change color when hovered */
+}
+
+
+/* Media Query for smaller screens (max-width: 768px) */
+@media (max-width: 800px) {
+  h1 {
+    font-size: 10vh; /* Reduce font size for h1 */
+  }
+
+  h2 {
+    font-size: 6vh; /* Reduce font size for h2 */
+  }
+
+  .start {
+    font-size: 4vh; /* Reduce font size for h3 (.start) */
+  }
+
+  .iconsHome i {
+    font-size: 20px; /* Reduce icon size for smaller screens */
+  }
+
+  .sidebar{
+    width: 200px;
+  }
+
+
+
+}
+
+/* Media Query for smaller screens (max-width: 768px) */
+@media (max-width: 482px) {
+  h1 {
+    font-size: 8vh; /* Reduce font size for h1 */
+  }
+
+  h2 {
+    font-size: 4vh; /* Reduce font size for h2 */
+  }
+
+  .start {
+    font-size: 2vh; /* Reduce font size for h3 (.start) */
+  }
+
+  .iconsHome i {
+    font-size: 10px; /* Reduce icon size for smaller screens */
+  }
+
+  .sidebar{
+    width: 150px;
+  }
+
+  .sidebar .profile_pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar h3{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 0.7em;
+  }
+  
+  .sidebar a{
+    width: 100%;
+    line-height: 70px;
+    padding-left: 40px;
+    font-size: 0.7em;
+  
+  }
+
+  
+  .left_area h3{
+    font-size: 13px;
+    padding-top: 10px;
+  }
+  
+  .contact_btn{
+    padding: 5px;
+    margin-top: -20px;
+    margin-right: 35px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+
+
+  label #sidebar_btn{
+    left: 170px;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  
+  
+  
+}
+
+/* Media Query for smaller screens (max-width: 768px) */
+@media (max-width: 300px) {
+  h1 {
+    font-size: 6vh; /* Reduce font size for h1 */
+  }
+
+  h2 {
+    font-size: 2vh; /* Reduce font size for h2 */
+  }
+
+  .start {
+    font-size: 1vh; /* Reduce font size for h3 (.start) */
+  }
+
+  .iconsHome i {
+    font-size: 7px; /* Reduce icon size for smaller screens */
+  }
+
+  .sidebar{
+    width: 100px;
+  }
+
+  .sidebar .profile_pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+  }
+    
+  .sidebar h3{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 0.3em;
+  }
+
+  .sidebar a{
+    width: 100%;
+    line-height: 70px;
+    padding-left: 20px;
+    font-size: 0.3em;
+  
+  }
+
+    
+  .left_area h3{
+    font-size: 8px;
+    padding-top: 10px;
+  }
+  
+  .contact_btn{
+    padding: 5px;
+    margin-top: -15px;
+    margin-right: 35px;
+    border-radius: 5px;
+    font-size: 8px;
+  }
+  
+  label #sidebar_btn{
+    left: 100px;
+    font-size: 7px;
+    margin: 13px 0;
+  }
+  
+  
+
+}
+
+
+/* Media Query for smaller screens (max-width: 768px) */
+@media (max-width: 170px) {
+  h1 {
+    font-size: 3vh; /* Reduce font size for h1 */
+  }
+
+  h2 {
+    font-size: 1vh; /* Reduce font size for h2 */
+  }
+  .start {
+    font-size: 1vh; /* Reduce font size for h3 (.start) */
+  }
+  .iconsHome i {
+    font-size: 2px; /* Reduce icon size for smaller screens */
+  }
+
+  .sidebar{
+    width: 50px;
+  }
+  
+  .sidebar .profile_pic{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+    
+  .sidebar h3{
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 0.1em;
+  }
+
+  .sidebar a{
+    width: 100%;
+    line-height: 70px;
+    padding-left: 0px;
+    font-size: 0.3em;
+  
+  }
+
+  .left_area h3{
+    font-size: 5px;
+    padding-top: 10px;
+    margin: 0;
+  }
+  
+  .contact_btn{
+    padding: 3px;
+    margin-top: -9px;
+    margin-right: 30px;
+    border-radius: 5px;
+    font-size: 5px;
+  }
+
+  label #sidebar_btn{
+    left: 70px;
+    font-size: 4px;
+    margin: 12px 0;
+  }
+  
+}
+
+#check:checked ~ .homeContent{
+  margin-left: 60px;
+}
+
+
+#check{
+  display: none;
+}
+
+/* General styling for sections */
+/* .section {
+    padding: 100px 20px; Add some padding for spacing
+    height: 100vh; Make each section take up the full viewport height
+} */
+
+/* Smooth scrolling effect */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+.aboutContent{
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 150vh; /* Make each section take up the full viewport height */
+  transition: 0.5s;
+  background-color: #0e0e14;
+  background-position: center;
+  background-size: cover;
+  padding: 0 210px; /* Add some padding for spacing */
+  /* text-align: center; */
+  /* position: relative; */
+  /* z-index: -1; */
+}
+
+.introSection{
+  padding: 70px 0 0 50px;
+  color: #fff;
+}
+
+.p1About{
+  font-size: 8vh;
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.p2About{
+  font-size: 3vh;
+}
+
+.p2About span{
+  color: #b4b4e4f7;
+}
+
+.skillEdu{
+  padding: 50px 0 0 50px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 500px;
+  margin: 30px 0px;
+  color: #fff;
+  font-size: 13px;
+}
+
+
+.skillEdu .p3About{
+  font-size: 3vh;
+  margin-top: 0;
+  text-transform: none;
+}
+
+
+.skillSection{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  color: #fff;
+  /* margin: 30px 30px; */
+  padding: 0 30px 0 0;
+}
+
+.skillSection li{
+  /* margin: 10px 0; */
+  padding: 5px;
+  list-style: none;
+}
+
+.bar{
+  background: #85a3ff;
+  display: block;
+  height: 20px;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgba(0, 125, 87, 1)0%, rgba(92, 236, 191, 1)100%);
+}
+
+.html{
+  width: 90%;
+  animation: html 3s;
+}
+
+.css{
+  width: 30%;
+  animation: css 3s;
+}
+
+.javascript{
+  width: 10%;
+  animation: javascript 3s;
+}
+
+.python{
+  width: 50%;
+  animation: python 3s;
+}
+
+@keyframes html {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 30%;
+  }
+}
+
+@keyframes javascript {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 10%;
+  }
+}
+
+@keyframes python {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 50%;
+  }
+}
