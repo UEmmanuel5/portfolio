@@ -125,30 +125,19 @@ label #sidebar_btn:hover{
 }
 
 
-/* .content{
-  margin-left: 250px;
-  background-color: #0e0e14;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  transition: 0.5s;
-} */
-
 
 .homeContent{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Make each section take up the full viewport height */
+  height: 100vh; 
   transition: 0.5s;
   background-color: #0e0e14;
   background-position: center;
   background-size: cover;
-  padding: 0 20px; /* Add some padding for spacing */
+  padding: 0 20px;
   text-align: center;
-  /* position: relative; */
-  /* z-index: -1; */
 }
 
 
@@ -187,9 +176,9 @@ h2 span{
 
 
 .iconsHome i {
-  font-size: 30px; /* Increase this value to make the icons larger */
-  margin: 10px; /* Optional: add some space between the icons */
-  color: #ffffff; /* Set color to make sure it matches your design */
+  font-size: 30px; 
+  margin: 10px; 
+  color: #ffffff; 
 }
 
 .youtubeIcon i{
@@ -197,26 +186,26 @@ h2 span{
 }
 
 .iconsHome a i:hover {
-  color: #00FF00; /* Example: change color when hovered */
+  color: #00FF00; 
 }
 
 
-/* Media Query for smaller screens (max-width: 768px) */
+
 @media (max-width: 800px) {
   h1 {
-    font-size: 10vh; /* Reduce font size for h1 */
+    font-size: 10vh; 
   }
 
   h2 {
-    font-size: 6vh; /* Reduce font size for h2 */
+    font-size: 6vh; 
   }
 
   .start {
-    font-size: 4vh; /* Reduce font size for h3 (.start) */
+    font-size: 4vh; 
   }
 
   .iconsHome i {
-    font-size: 20px; /* Reduce icon size for smaller screens */
+    font-size: 20px; 
   }
 
   .sidebar{
@@ -227,22 +216,22 @@ h2 span{
 
 }
 
-/* Media Query for smaller screens (max-width: 768px) */
+
 @media (max-width: 482px) {
   h1 {
-    font-size: 8vh; /* Reduce font size for h1 */
+    font-size: 8vh; 
   }
 
   h2 {
-    font-size: 4vh; /* Reduce font size for h2 */
+    font-size: 4vh; 
   }
 
   .start {
-    font-size: 2vh; /* Reduce font size for h3 (.start) */
+    font-size: 2vh; 
   }
 
   .iconsHome i {
-    font-size: 10px; /* Reduce icon size for smaller screens */
+    font-size: 10px; 
   }
 
   .sidebar{
@@ -296,22 +285,22 @@ h2 span{
   
 }
 
-/* Media Query for smaller screens (max-width: 768px) */
+
 @media (max-width: 300px) {
   h1 {
-    font-size: 6vh; /* Reduce font size for h1 */
+    font-size: 6vh; 
   }
 
   h2 {
-    font-size: 2vh; /* Reduce font size for h2 */
+    font-size: 2vh; 
   }
 
   .start {
-    font-size: 1vh; /* Reduce font size for h3 (.start) */
+    font-size: 1vh; 
   }
 
   .iconsHome i {
-    font-size: 7px; /* Reduce icon size for smaller screens */
+    font-size: 7px; 
   }
 
   .sidebar{
@@ -365,20 +354,20 @@ h2 span{
 }
 
 
-/* Media Query for smaller screens (max-width: 768px) */
+
 @media (max-width: 170px) {
   h1 {
-    font-size: 3vh; /* Reduce font size for h1 */
+    font-size: 3vh; 
   }
 
   h2 {
-    font-size: 1vh; /* Reduce font size for h2 */
+    font-size: 1vh;
   }
   .start {
-    font-size: 1vh; /* Reduce font size for h3 (.start) */
+    font-size: 1vh;
   }
   .iconsHome i {
-    font-size: 2px; /* Reduce icon size for smaller screens */
+    font-size: 2px;
   }
 
   .sidebar{
@@ -438,13 +427,6 @@ h2 span{
   display: none;
 }
 
-/* General styling for sections */
-/* .section {
-    padding: 100px 20px; Add some padding for spacing
-    height: 100vh; Make each section take up the full viewport height
-} */
-
-/* Smooth scrolling effect */
 html {
     scroll-behavior: smooth;
 }
@@ -454,21 +436,17 @@ html {
 
 
 
+/* About Section  */
 
 .aboutContent{
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  height: 150vh; /* Make each section take up the full viewport height */
+  justify-content: center;
+  align-items: center;
+  height: 130vh;
   transition: 0.5s;
   background-color: #0e0e14;
   background-position: center;
   background-size: cover;
-  padding: 0 210px; /* Add some padding for spacing */
-  /* text-align: center; */
-  /* position: relative; */
-  /* z-index: -1; */
+  padding: 0 210px;
 }
 
 .introSection{
@@ -484,7 +462,15 @@ html {
 }
 
 .p2About{
-  font-size: 3vh;
+  font-size: 4vh;
+}
+
+.p3About{
+  font-size: 20px;
+}
+
+.p3About span{
+  color: #b4b4e4f7;
 }
 
 .p2About span{
@@ -511,13 +497,13 @@ html {
 
 .skillSection{
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  color: #fff;
-  /* margin: 30px 30px; */
   padding: 0 30px 0 0;
+  background-color: #1e1e1e;
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
 }
 
 .skillSection li{
-  /* margin: 10px 0; */
   padding: 5px;
   list-style: none;
 }
@@ -529,7 +515,6 @@ html {
   border: 1px solid rgb(0, 0, 0, 0.3);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
@@ -544,12 +529,12 @@ html {
 }
 
 .html{
-  width: 90%;
+  width: 70%;
   animation: html 3s;
 }
 
 .css{
-  width: 30%;
+  width: 45%;
   animation: css 3s;
 }
 
@@ -568,7 +553,7 @@ html {
     width: 0%;
   }
   100%{
-    width: 90%;
+    width: 70%;
   }
 }
 
@@ -577,7 +562,7 @@ html {
     width: 0%;
   }
   100%{
-    width: 30%;
+    width: 45%;
   }
 }
 
@@ -597,4 +582,180 @@ html {
   100%{
     width: 50%;
   }
+}
+
+
+
+
+
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skillEdu {
+  width: 100%;
+  padding: 50px 0 0 50px;
+}
+
+.skillSectionContainer, .educationSectionContainer {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+.skillSectionContainer {
+  margin-right: 40px; 
+}
+
+.skillSection, .educationSection {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  color: #fff;
+  padding: 20px;
+}
+
+.p4About, .p5About {
+  font-size: 3vh;
+  text-transform: none;
+}
+
+.skillSection li, .educationSection li {
+  list-style: none;
+  margin-bottom: 10px;
+
+}
+
+
+
+@media (max-width: 768px) {
+  .row {
+      flex-direction: column;
+  }
+
+  .skillSectionContainer, .educationSectionContainer {
+      margin-right: 0;
+      width: 100%;
+  }
+}
+
+
+.educationSection {
+  background-color: #1e1e1e; 
+  border: 2px solid #00ffcc; 
+  border-radius: 8px; 
+  padding: 20px; 
+  color: #ffffff; 
+  margin-bottom: 100px; 
+}
+
+
+.educationList {
+  list-style-type: none;
+  padding: 14px;
+}
+
+.educationItem {
+  padding: 20px 0; 
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.educationContent {
+  display: flex;
+  flex-direction: column; 
+}
+
+.date {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.institution {
+  color: #00ffcc;
+  font-size: 18px;
+}
+
+.degree {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.gpa {
+  margin-bottom: 5px;
+}
+
+.calendar {
+  margin-right: 15px;
+}
+
+.calendar i {
+  font-size: 24px;
+  color: #00ffcc; 
+}
+
+
+footer {
+  background: #636369;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.iconsHome a {
+  color: #00ffcc;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.iconsHome a:hover {
+  color: #fff;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.footer-nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.footer-nav a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+
+.iconsHome1 a {
+  color: #fff;
+  font-size: 20px;
+  margin: 20px;
+  text-decoration: none;
+}
+
+
+.iconsHome1 a i:hover {
+  color: #00FF00; 
 }
