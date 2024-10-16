@@ -759,3 +759,51 @@ footer p {
 .iconsHome1 a i:hover {
   color: #00FF00; 
 }
+
+
+
+
+/* Project section  */
+.introprojects{
+  align-content: center;
+  justify-items: center;
+  padding: 0 300px 40px 300px;
+}
+
+
+.projectscontent{
+  justify-content: flex-start;
+  align-items: center;
+  height: 130vh;
+  transition: 0.5s;
+  background-color: #0e0e14;
+  background-position: center;
+  background-size: cover;
+  padding:  200px;
+  /* display: flex; */
+  flex-direction: row;
+  padding: 100px 300px;
+}
+
+.picture_content{
+  border: 2px solid #fff;
+  width: 500px;
+  height: 500px;
+  border-radius: 30px;
+}
+
+.projectimage{
+  width: 80%;
+  height: 80%;
+  margin-left: 50px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+
+.projectimagecontent{
+  color: #fff;
+  padding-left: 50px ;
+  padding-right: 50px;
+  margin-bottom: 200px;
+}
