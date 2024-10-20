@@ -20,7 +20,7 @@
             <h3>Ugwu <span>Emmanuel</span></h3>
         </div>
         <div class="right_area">
-            <a href="#" class="contact_btn">Contact Me</a>
+            <a href="#" class="resume_btn" id="resume">Resume</a>
         </div>
     </header>
     <!-- header ends -->
@@ -53,18 +53,18 @@
      </main>
     <!-- main content ends -->
 
+    
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script> 
+
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Get all sidebar links
-            const links = document.querySelectorAll('.sidebar a');
-            
-            // Loop through each link to find the current URL
-            links.forEach(link => {
-                if (link.href === window.location.href) {
-                    link.classList.add('active');  // Add an 'active' class to the current link
-                }
-            });
-        });
+        const button = document.querySelector('#resume');
+        const canvas = document.querySelector('#confetti');
+
+        const jsConfetti = new JSConfetti();
+
+        button.addEventListener('click', () => {
+            jsConfetti.addConfetti()
+        })
     </script>    
  
 </body>

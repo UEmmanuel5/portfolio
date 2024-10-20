@@ -10,67 +10,99 @@
 </head>
 <body>
 
-    <input type="checkbox" id="check">
-    <!-- header -->
-    <header>
-        <label for="check">
-            <i class="fa-solid fa-bars" id="sidebar_btn"></i>
-        </label>
-        <div class="left_area">
-            <h3>Ugwu <span>Emmanuel</span></h3>
-        </div>
-        <div class="right_area">
-            <a href="#" class="contact_btn">Contact Me</a>
-        </div>
-    </header>
-    <!-- header ends -->
 
-    <!-- sidebar starts -->
-    <div class="sidebar">
-        <center>
-            <img src="images/userImage.png" class="profile_pic" alt="user image">
-            <h3>Emmanuel</h3>
-        </center>
-        <a href="index.html"><i class="fa-solid fa-desktop"></i><span>Home</span></a>
-        <a href="about.html"><i class="fa-solid fa-info-circle"></i><span>About</span></a>
-        <a href="projects.html"><i class="fa-solid fa-list-check"></i><span>Projects</span></a>
-        <a href="services.html"><i class="fa-solid fa-hand-holding-hand"></i><span>Services</span></a>
-        <a href="contact.html"><i class="fa-solid fa-phone-volume"></i><span>Contact</span></a>
-    </div>
-    
-
-    <!-- sidebar ends -->
 
 
     <!-- main content start -->
-    <main>
+    <main class="main">
+        <input type="checkbox" id="check">
+        <!-- header -->
+        <header class="headerproject">
+            <label for="check">
+                <i class="fa-solid fa-bars" id="sidebar_btn"></i>
+            </label>
+            <div class="left_area">
+                <h3>Ugwu <span>Emmanuel</span></h3>
+            </div>
+            <div class="right_area" id="confetti">
+                <a href="#" class="resume_btn" id="resume">Resume</a>
+            </div>
+        </header>
+        <!-- header ends -->
+    
+        <!-- sidebar starts -->
+        <div class="sidebar">
+            <center>
+                <img src="images/userImage.png" class="profile_pic" alt="user image">
+                <h3>Emmanuel</h3>
+            </center>
+            <a href="index.html"><i class="fa-solid fa-desktop"></i><span>Home</span></a>
+            <a href="about.html"><i class="fa-solid fa-info-circle"></i><span>About</span></a>
+            <a href="projects.html"><i class="fa-solid fa-list-check"></i><span>Projects</span></a>
+            <a href="services.html"><i class="fa-solid fa-hand-holding-hand"></i><span>Services</span></a>
+            <a href="contact.html"><i class="fa-solid fa-phone-volume"></i><span>Contact</span></a>
+        </div>
+        
+    
+        <!-- sidebar ends -->
+
         <div class="projectscontent" id="projects">
             <h2 class="introprojects">Projects</h2>
-            <section class="picture_content">
-                <img src="images/userImage.png" class="projectimage" alt="project image">
-                <div class="projectimagecontent">
-                    <p class="projectimagecontent1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, tempora?</p>
-                    <p class="projectimagecontent2">Github</p>
-                </div>
-            </section>
+            <div class="cubes">
+                <section class="picture_content">
+                    <img src="images/userImage.png" class="projectimage" alt="project image">
+                    <div class="projectimagecontent">
+                        <p class="projectimagecontent1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio architecto minima quam dignissimos quaerat aperiam, ipsam saepe dolorum quos, quidem eaque debitis deleniti pariatur cum nemo impedit. Officia consectetur doloribus laborum ratione optio! Laudantium sunt similique tempore repellat aperiam neque dolores deleniti exercitationem? Quod rem recusandae libero impedit animi quasi!</p>
+                        <a href="github" class="projectimagecontent2">Github</a>
+                    </div>
+                </section>
+    
+                <section class="picture_content">
+                    <img src="images/userImage.png" class="projectimage" alt="project image">
+                    <div class="projectimagecontent">
+                        <p class="projectimagecontent1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque libero hic officia perferendis illum unde exercitationem error, ab eveniet? Esse nisi, voluptatibus vero consequuntur fugit aperiam magnam fugiat hic reiciendis nesciunt obcaecati repellendus. Quod ullam sunt eaque eius veritatis quisquam! Nostrum molestiae laborum ut beatae repellat, quas praesentium nam repellendus.</p>
+                        <a href="github" class="projectimagecontent2">Github</a>
+                    </div>
+                </section>
+
+                <section class="picture_content">
+                    <img src="images/userImage.png" class="projectimage" alt="project image">
+                    <div class="projectimagecontent">
+                        <p class="projectimagecontent1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque libero hic officia perferendis illum unde exercitationem error, ab eveniet? Esse nisi, voluptatibus vero consequuntur fugit aperiam magnam fugiat hic reiciendis nesciunt obcaecati repellendus. Quod ullam sunt eaque eius veritatis quisquam! Nostrum molestiae laborum ut beatae repellat, quas praesentium nam repellendus.</p>
+                        <a href="github" class="projectimagecontent2">Github</a>
+                    </div>
+                </section>
+
+                <section class="picture_content">
+                    <img src="images/userImage.png" class="projectimage" alt="project image">
+                    <div class="projectimagecontent">
+                        <p class="projectimagecontent1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque libero hic officia perferendis illum unde exercitationem error, ab eveniet? Esse nisi, voluptatibus vero consequuntur fugit aperiam magnam fugiat hic reiciendis nesciunt obcaecati repellendus. Quod ullam sunt eaque eius veritatis quisquam! Nostrum molestiae laborum ut beatae repellat, quas praesentium nam repellendus.</p>
+                        <a href="github" class="projectimagecontent2">Github</a>
+                    </div>
+                </section>
+
+                
+            </div>
             
         </div>
      </main>
     <!-- main content ends -->
 
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script> 
+
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Get all sidebar links
-            const links = document.querySelectorAll('.sidebar a');
-            
-            // Loop through each link to find the current URL
-            links.forEach(link => {
-                if (link.href === window.location.href) {
-                    link.classList.add('active');  // Add an 'active' class to the current link
-                }
-            });
-        });
-    </script>    
- 
-</body>
+        const button = document.querySelector('#resume');
+        const canvas = document.querySelector('#confetti');
+
+        const jsConfetti = new JSConfetti();
+
+        button.addEventListener('click', () => {
+            jsConfetti.addConfetti()
+        })
+    </script>
 </html>
