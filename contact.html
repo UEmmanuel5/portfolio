@@ -12,7 +12,7 @@
 
     <input type="checkbox" id="check">
     <!-- header -->
-    <header>
+    <header class="headercontact">
         <label for="check">
             <i class="fa-solid fa-bars" id="sidebar_btn"></i>
         </label>
@@ -20,7 +20,7 @@
             <h3>Ugwu <span>Emmanuel</span></h3>
         </div>
         <div class="right_area">
-            <a href="#" class="resume_btn" id="resume">Resume</a>
+            <a href="images/Emmanuel.pdf" class="resume_btn" id="resume">Resume</a>
         </div>
     </header>
     <!-- header ends -->
@@ -44,12 +44,62 @@
 
     <!-- main content start -->
     <main>
-        <div class="content" id="contact">
-            <section class="section">
-                <h2>Contacts</h2>
-                <p>Welcome to the Contacts Section.</p>
-            </section>
-        </div>
+        <section id="contact" class="contact-page">
+            <h2 class="contactprojects">Contact Me</h2>
+            <hr>
+
+            <div class="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="e16336ea-e796-487a-b70d-dac8aba45f7a">
+                    <!-- <label for="name">Name:</label> -->
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    
+                    <!-- <label for="email">Email:</label> -->
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    
+                    <!-- <label for="subject">Subject:</label> -->
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    
+                    <!-- <label for="message">Message:</label> -->
+                    <textarea id="message" name="message" rows="6" placeholder="Please write your message here"></textarea><br>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+
+        <footer>
+            <!-- Social Media Icons -->
+            <center class="iconsHome1">
+                <a href="https://github.com/UEmmanuel5" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a> 
+                <a href="https://www.youtube.com/@brainwave_alpha" target="_blank" class="youtubeIcon">
+                    <i class="fa-brands fa-youtube"></i>
+                </a> 
+                <a href="https://twitter.com/ugwuemmanuel" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ugwuemmanuel">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </center>
+        
+    
+            <!-- Quick Navigation Links -->
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="servicess.html">Services</a></li>
+                <li><a href="#contact.html">Contact</a></li>
+            </ul>
+            <!-- Copyright -->
+            <p>&copy; 2024 Emmanuel. All Rights Reserved.</p>
+        </footer>
+        
      </main>
     <!-- main content ends -->
 
@@ -59,13 +109,20 @@
     <script>
         const button = document.querySelector('#resume');
         const canvas = document.querySelector('#confetti');
-
+    
         const jsConfetti = new JSConfetti();
+    
+        button.addEventListener('click', (event) => {
 
-        button.addEventListener('click', () => {
-            jsConfetti.addConfetti()
-        })
-    </script>    
+            event.preventDefault();
+            
+            jsConfetti.addConfetti();
+            
+            setTimeout(() => {
+                window.open('images/Emmanuel.pdf', '_blank');
+            }, 2000);
+        });
+    </script>
  
 </body>
 </html>

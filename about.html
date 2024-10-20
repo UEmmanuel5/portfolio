@@ -20,7 +20,7 @@
             <h3>Ugwu <span>Emmanuel</span></h3>
         </div>
         <div class="right_area">
-            <a href="#" class="resume_btn" id="resume">Resume</a>
+            <a href="images/Emmanuel.pdf" class="resume_btn" id="resume">Resume</a>
         </div>
     </header>
     <!-- header ends -->
@@ -47,6 +47,7 @@
         <div class="aboutContent" id="about">
             <section class="introSection">
                 <p class="p1About">About me</p>
+                <hr>
                 <p class="p2About">I am <span>Ugwu Emmanuel Ugochukwu</span></p>
                 <p class="p3About">I am a second-year Master's student and a web developer skilled in <span>HTML</span>, <span>CSS</span>, and some <span>JavaScript</span>, with freelance project experience. Currently, I’m learning <span>PHP</span> , <span>MySQL</span>, and <span>Django</span> to build dynamic applications and integrate deep learning models, having worked with CNNs, RNNs, and Transformers using <span>Python</span>. I also have experience with Arduino for <span>IoT</span> and <span>robotics</span>, and am exploring Raspberry Pi for more advanced automation projects.</p>                
             </section>
@@ -119,6 +120,9 @@
                 <a href="https://twitter.com/ugwuemmanuel" target="_blank">
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
+                <a href="https://www.linkedin.com/in/ugwuemmanuel">
+                    <i class="fab fa-linkedin"></i>
+                </a>
             </center>
         
     
@@ -140,15 +144,22 @@
      <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script> 
 
      <script>
-         const button = document.querySelector('#resume');
-         const canvas = document.querySelector('#confetti');
- 
-         const jsConfetti = new JSConfetti();
- 
-         button.addEventListener('click', () => {
-             jsConfetti.addConfetti()
-         })
-     </script>  
+        const button = document.querySelector('#resume');
+        const canvas = document.querySelector('#confetti');
+    
+        const jsConfetti = new JSConfetti();
+    
+        button.addEventListener('click', (event) => {
+
+            event.preventDefault();
+            
+            jsConfetti.addConfetti();
+            
+            setTimeout(() => {
+                window.open('images/Emmanuel.pdf', '_blank');
+            }, 2000);
+        });
+    </script>
 
     
 </body>

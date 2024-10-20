@@ -20,7 +20,7 @@
             <h3>Ugwu <span>Emmanuel</span></h3>
         </div>
         <div class="right_area">
-            <a href="#" class="resume_btn" id="resume">Resume</a>
+            <a href="images/Emmanuel.pdf" class="resume_btn" id="resume">Resume</a>
         </div>
     </header>
     <!-- header ends -->
@@ -87,12 +87,19 @@
     <script>
         const button = document.querySelector('#resume');
         const canvas = document.querySelector('#confetti');
-
+    
         const jsConfetti = new JSConfetti();
+    
+        button.addEventListener('click', (event) => {
 
-        button.addEventListener('click', () => {
-            jsConfetti.addConfetti()
-        })
+            event.preventDefault();
+            
+            jsConfetti.addConfetti();
+            
+            setTimeout(() => {
+                window.open('images/Emmanuel.pdf', '_blank');
+            }, 2000);
+        });
     </script>
  
 </body>
