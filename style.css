@@ -812,6 +812,12 @@ footer p {
   font-size: 8vh;
 }
 
+.introResearch{
+  color: white;
+  font-size: 8vh;
+  margin-top: 80px;
+}
+
 .projectscontent hr{
   margin-bottom: 50px;
   border: none;
@@ -841,15 +847,54 @@ footer p {
   flex-direction: column;
 }
 
+.picture_content1 {
+  border: 2px solid #00ffcc;
+  border-radius: 30px;
+  padding: 10px;
+  width: calc(50% - 30px);
+  background-color: #1e1e24;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+
 .projectimage {
   width: 100%;
-  height: auto;
+  height: calc(100% - 20px); /* Set height to a dynamic value, adjusting for container padding */
+  /* object-fit: inherit;  */
   border-radius: 20px;
   margin-bottom: 10px;
 }
 
+.projectimage1 {
+  width: 100%;          /* Make the image take full width of its container */
+  height: 400px; /* Set a fixed height (adjust as needed) */
+  object-fit: inherent;  /* Ensures the entire image is shown */
+  border-radius: 20px;  /* Optional: to match the container's border radius */
+}
+
+
 .projectimagecontent {
   color: #fff;
+}
+
+.projectimagecontent1Titile{
+  color: #fff;
+  margin: 10px 0;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.projectimagecontent hr{
+  margin-bottom: 0;
+  border: none;
+  width: 500px;
+  height: 5px;
+  /* background-color: #00ffcc; */
+  border-radius: 10px;
+  margin-right: 800px;
 }
 
 .projectimagecontent1 {
