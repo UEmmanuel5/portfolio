@@ -14,7 +14,7 @@
 
 
     <!-- main content start -->
-    <main class="main">
+    <main class="mainprojects">
         <input type="checkbox" id="check">
         <!-- header -->
         <header class="headerproject">
@@ -25,7 +25,7 @@
                 <h3>Ugwu <span>Emmanuel</span></h3>
             </div>
             <div class="right_area" id="confetti">
-                <a href="#" class="resume_btn" id="resume">Resume</a>
+                <a href="images/Emmanuel.pdf" class="resume_btn" id="resume">Resume</a>
             </div>
         </header>
         <!-- header ends -->
@@ -48,6 +48,7 @@
 
         <div class="projectscontent" id="projects">
             <h2 class="introprojects">Projects</h2>
+            <hr>
             <div class="cubes">
                 <section class="picture_content">
                     <img src="images/userImage.png" class="projectimage" alt="project image">
@@ -57,6 +58,22 @@
                     </div>
                 </section>
     
+                <section class="picture_content">
+                    <img src="images/userImage.png" class="projectimage" alt="project image">
+                    <div class="projectimagecontent">
+                        <p class="projectimagecontent1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque libero hic officia perferendis illum unde exercitationem error, ab eveniet? Esse nisi, voluptatibus vero consequuntur fugit aperiam magnam fugiat hic reiciendis nesciunt obcaecati repellendus. Quod ullam sunt eaque eius veritatis quisquam! Nostrum molestiae laborum ut beatae repellat, quas praesentium nam repellendus.</p>
+                        <a href="github" class="projectimagecontent2">Github</a>
+                    </div>
+                </section>
+
+                <section class="picture_content">
+                    <img src="images/userImage.png" class="projectimage" alt="project image">
+                    <div class="projectimagecontent">
+                        <p class="projectimagecontent1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque libero hic officia perferendis illum unde exercitationem error, ab eveniet? Esse nisi, voluptatibus vero consequuntur fugit aperiam magnam fugiat hic reiciendis nesciunt obcaecati repellendus. Quod ullam sunt eaque eius veritatis quisquam! Nostrum molestiae laborum ut beatae repellat, quas praesentium nam repellendus.</p>
+                        <a href="github" class="projectimagecontent2">Github</a>
+                    </div>
+                </section>
+
                 <section class="picture_content">
                     <img src="images/userImage.png" class="projectimage" alt="project image">
                     <div class="projectimagecontent">
@@ -98,11 +115,18 @@
     <script>
         const button = document.querySelector('#resume');
         const canvas = document.querySelector('#confetti');
-
+    
         const jsConfetti = new JSConfetti();
+    
+        button.addEventListener('click', (event) => {
 
-        button.addEventListener('click', () => {
-            jsConfetti.addConfetti()
-        })
+            event.preventDefault();
+            
+            jsConfetti.addConfetti();
+            
+            setTimeout(() => {
+                window.open('images/Emmanuel.pdf', '_blank');
+            }, 2000);
+        });
     </script>
 </html>
