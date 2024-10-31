@@ -1215,7 +1215,7 @@ footer p {
     
 
   .contact-page {
-  min-height: 100vh;
+  min-height: 85vh;
   width: 100vw;
   background-color: #0e0e14;
   padding: 160px 0 0 20px;
@@ -1234,7 +1234,7 @@ footer p {
 }
 
 .contact-page hr{
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   border: none;
   width: 150px;
   height: 5px;
@@ -1281,7 +1281,64 @@ footer p {
 /* footer  */
 
 footer {
-  display: none;
+  background: #636369;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer h3 {
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.iconsHome a {
+  color: #00ffcc;
+  font-size: 11px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.iconsHome a:hover {
+  color: #fff;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.footer-nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.footer-nav a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+
+.iconsHome1 a {
+  color: #fff;
+  font-size: 20px;
+  margin: 20px;
+  text-decoration: none;
+}
+
+
+.iconsHome1 a i:hover {
+  color: #00FF00; 
 }
 
 
