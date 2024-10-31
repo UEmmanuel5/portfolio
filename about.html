@@ -170,9 +170,9 @@
     </script>
 
     <script>
-        const yearSpan = document.querySelector("#currentYear");
-        const currentYear = new Date();
-        yearSpan.innerText = currentYear.getFullYear();
+        const date = new Date();
+        const year = date.getFullYear;
+        document.getElementById('currentYear').innerHTML = year;
     </script>
 
     
