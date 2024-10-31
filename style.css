@@ -1114,8 +1114,14 @@ footer p {
 
 
 @media (min-width: 360px) and (max-width: 740px) {
-    
-  
+
+  html, body {
+      width: 100vw;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+  }
+
   /* Contact section  */
   #check{
       display: none;
@@ -1124,7 +1130,7 @@ footer p {
   header{
       position: absolute;
       padding: 20px;
-      width: calc(128% + 1%);
+      width: 89vw;
       height: 30px;
       overflow-x: hidden;
       overflow-y: hidden;
@@ -1139,10 +1145,11 @@ footer p {
 
     
     .resume_btn{
-      margin-top: -28px;
-      margin-right: 0px;
-      border-radius: 10px;
-      font-size: 7px;
+      margin-top: -26px;
+      margin-right: -10px;
+      border-radius: 7px;
+      font-size: 14px;
+      padding: 5px;
       position: relative;
     }
     
@@ -1152,13 +1159,11 @@ footer p {
       padding-top: 30px;
       position: fixed;
       align-content: center;
-      width: calc(139% + 0.5%);
+      width: 100vw;
       height: 50px;
       position: absolute;
       display: flex;
       flex-direction: row;
-      overflow-x: hidden;
-      overflow-y: hidden;
     }
     
     .sidebar .profile_pic{
@@ -1208,33 +1213,30 @@ footer p {
       display: none;
     }
     
-  body{
-      height: 100%;
-  }
 
   .contact-page {
-  min-height: 90vh;
-  width: calc(139% + 0.7%);
+  min-height: 100vh;
+  width: 100vw;
   background-color: #0e0e14;
-  padding: 160px 0 70% 20px;
+  padding: 160px 0 0 20px;
   z-index: -1;
   box-sizing: border-box;
   background-position: center;
   background-size: cover;
-  overflow-x: hidden;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .contactprojects{
   color: white;
-  font-size: 2rem;
+  font-size: 30px;
   margin-bottom: 0;
 }
 
 .contact-page hr{
   margin-bottom: 100px;
   border: none;
-  width: 170px;
+  width: 150px;
   height: 5px;
   background-color: #00ffcc;
   border-radius: 10px;
@@ -1246,7 +1248,7 @@ footer p {
   flex-direction: column;
   align-items: center;
   color: #fff;
-  padding: 20px 0 0 20px;
+  padding: 10px 0 0 20px;
 }
 
 .contact-form label {
@@ -1255,11 +1257,11 @@ footer p {
 
 .contact-form input, .contact-form textarea {
   width: 80%;
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 10px;
   border: 2px solid #00ffcc;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .contact-form input:hover, .contact-form textarea:hover{
@@ -1271,7 +1273,7 @@ footer p {
 }
 
 .contact-form button {
-  padding: 20px 152px;
+  font-size: 12px;
 }
 
 
@@ -1279,63 +1281,26 @@ footer p {
 /* footer  */
 
 footer {
-  background: #636369;
-  color: #fff;
-  padding: 20px 0;
-  width: 140%;
-  text-align: center;
-}
-
-footer h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.iconsHome a {
-  color: #00ffcc;
-  font-size: 20px;
-  text-decoration: none;
-  margin-left: 10px;
-}
-
-.iconsHome a:hover {
-  color: #fff;
-}
-
-.footer-nav {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
-}
-
-.footer-nav li {
-  display: inline;
-  margin-right: 15px;
-}
-
-.footer-nav a {
-  color: #00ffcc;
-  text-decoration: none;
-}
-
-.footer-nav a:hover {
-  text-decoration: underline;
-}
-
-footer p {
-  margin: 10px 0;
+  display: none;
 }
 
 
-.iconsHome1 a {
-  color: #fff;
-  font-size: 20px;
-  margin: 20px;
-  text-decoration: none;
+
+
 }
 
 
-.iconsHome1 a i:hover {
-  color: #00FF00; 
-}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
