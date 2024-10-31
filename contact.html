@@ -94,7 +94,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <!-- Copyright -->
-            <p>&copy; 2024 Emmanuel. All Rights Reserved.</p>
+            <p>&copy; <span id="currentYear">2024</span>  Emmanuel. All Rights Reserved.</p>
         </footer>
         
      </main>
@@ -120,6 +120,12 @@
             }, 2000);
         });
     </script>
- 
+    
+
+    <script>
+        const yearSpan = document.querySelector("#currentYear");
+        const currentYear = new Date();
+        yearSpan.innerText = currentYear.getFullYear();
+    </script>
 </body>
 </html>
